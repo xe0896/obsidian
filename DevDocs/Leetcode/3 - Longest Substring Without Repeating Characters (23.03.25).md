@@ -45,11 +45,8 @@ But initially it seemed like this wasn't to efficient in terms of the use of poi
 
 Extra notes: I was doing the `i = j` stuff but then didn't account for the above so I thought it was something to do with the pointers not pointing to the correct characters so I was messing around with `i = j - 1` which gave me extra tests passed but still not 100% but it was just that the small tests passed that reaped benefits from that `-1`, 
 
-*also i could make this more efficient using StringBuilder and hashing but maybe when you see this again or use a completely different logic using a sliding window*
-
 
 <span style="color:red">also i could make this more efficient using StringBuilder and hashing but maybe when you see this again or use a completely different logic using a sliding window</span>.
-
 
 ## Lessons learned
 
