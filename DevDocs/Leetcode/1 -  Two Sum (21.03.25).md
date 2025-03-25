@@ -3,7 +3,6 @@ Given an array of integers `nums` and an integer `target`, return _indices o
 You may assume that each input would have **_exactly_ one solution**, and you may not use the _same_ element twice.
 
 You can return the answer in any order.
-
 ***
 This problem was very easy to see what I needed to do, the hard part was figuring out how to make this not $O(n^2)$, but we will focus on the easy solution for now. 
 

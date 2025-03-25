@@ -1,5 +1,4 @@
 Given a string `s`, find the length of the **longest** **substring** without duplicate characters.
-
 ***
 For this problem, I've already received hints on the use of two pointers such that we can iterate through the string given easily by having a pointer `i` which acts as the main pointer and another pointer `j` which will start from `i` and locate any substrings until a duplicate is found.
 
