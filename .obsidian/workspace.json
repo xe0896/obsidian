@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevDocs/Leetcode/3 - Longest Substring Without Repeating Characters (23.03.25).md",
+                "file": "DevDocs/Leetcode/5 - Longest Palindrome Substring (24.03.25).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3 - Longest Substring Without Repeating Characters (23.03.25)"
+              "title": "5 - Longest Palindrome Substring (24.03.25)"
             }
           }
         ]
@@ -157,8 +157,8 @@
             "state": {
               "type": "advanced-tables-toolbar",
               "state": {},
-              "icon": "spreadsheet",
-              "title": "Advanced Tables"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           }
         ],
@@ -182,12 +182,12 @@
   },
   "active": "a642d813660bf2be",
   "lastOpenFiles": [
+    "DevDocs/Leetcode/Untitled.md",
     "DevDocs/Leetcode/5 - Longest Palindrome Substring (24.03.25).md",
-    "DevDocs/Leetcode/9 - Palindrome Number (24.03.25).md",
-    "DevDocs/Leetcode/3 - Longest Substring Without Repeating Characters (23.03.25).md",
-    "DevDocs/Leetcode/2 - Add Two Numbers (22.03.25).md",
-    "DevDocs/Leetcode/1 -  Two Sum (21.03.25).md",
     "DevDocs/Leetcode/944 - Delete Columns to Make Sorted (16.03.25).md",
+    "DevDocs/Leetcode/9 - Palindrome Number (24.03.25).md",
+    "DevDocs/Leetcode/2 - Add Two Numbers (22.03.25).md",
+    "DevDocs/Leetcode/3 - Longest Substring Without Repeating Characters (23.03.25).md",
     "DevDocs/Leetcode/1 -  Two Sum (21.03.25).md",
     "DevDocs/Untitled 1.md",
     "DevDocs/Leetcode",
@@ -212,7 +212,6 @@
     "Year1/Computer Organisation and Architecture/Computational logic.md",
     "Year1/Computer Organisation and Architecture/Processor Architecture.md",
     "Year1/Computer Organisation and Architecture/RISC and CISC.md",
-    "Year1/Computer Organisation and Architecture/Designing a processor breakdown.md",
     "Year1/Images/Pasted image 20231011152835.png",
     "Year1/Images/Pasted image 20231019100834.png",
     "Year1/Images/Pasted image 20231019101533.png",
