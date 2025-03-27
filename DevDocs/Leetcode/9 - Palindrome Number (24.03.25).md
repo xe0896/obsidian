@@ -1,4 +1,4 @@
-Given an integer `x`, return `true` _if_ `x` _is a_ _**palindrome**__, and_ `false` _otherwise_.
+Given an integer `x`, return `true` _if_ `x` _is a_ _**palindrome**_, and `false` otherwise.
 ***
 This problem was really straightforward if you just turned the integer into a string, so not much was learnt here but the reversal of the reversal process and changing the for loop was interesting:
 ```java

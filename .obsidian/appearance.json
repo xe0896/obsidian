@@ -2,5 +2,6 @@
   "accentColor": "",
   "theme": "obsidian",
   "translucency": true,
-  "baseFontSize": 13
+  "baseFontSize": 13,
+  "nativeMenus": false
 }

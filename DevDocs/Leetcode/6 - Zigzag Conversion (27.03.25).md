@@ -1,0 +1,12 @@
+The string `"PAYPALISHIRING"` is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility)
+
+![[Pasted image 20250327220727.png]]
+
+And then read line by line: `"PAHNAPLSIIGYIR"`
+
+Write the code that will take a string and make this conversion given a number of rows:
+
+```java
+string convert(string s, int numRows);
+```
+***

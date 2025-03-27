@@ -45,8 +45,39 @@ But initially it seemed like this wasn't to efficient in terms of the use of poi
 
 Extra notes: I was doing the `i = j` stuff but then didn't account for the above so I thought it was something to do with the pointers not pointing to the correct characters so I was messing around with `i = j - 1` which gave me extra tests passed but still not 100% but it was just that the small tests passed that reaped benefits from that `-1`, 
 
+<span style="color:green">Also i could make this more efficient using StringBuilder and hashing but maybe when you see this again or use a completely different logic using a sliding window</span>.
 
-<span style="color:red">also i could make this more efficient using StringBuilder and hashing but maybe when you see this again or use a completely different logic using a sliding window</span>.
+## Sliding Window solution
+
+```java
+public int lengthOfLongestSubstring(String s) {
+	int maxLength = 0;
+	Set<Character> set = new Hashset<>():
+	int left = 0;
+	
+	for (int right = 0; right < s.length(); right++) {
+		while (set.contains(s.charAt(right))) {
+			set.remove(s.charAt(left));
+			left++;
+		}
+		
+		set.add(s.charAt(right));
+		maxLength = Math.max(maxLength, right - left + 1);
+	}
+}
+```
+  The right and left pointers are denoted as $L,R$ respectively, the right pointer will increment until it finds a duplicate, while doing this it will keep track of its length and due to how the `Math.max()` was structured, it will ensure that whatever length it will encounter, it will store its highest length it has seen for the whole process. 
+  $$\begin{array}{cccccc}
+    f & a & c & d & a & e \\
+    L &  &  & R \\
+  \end{array}$$
+The example above shows that $L = 0$ and $L = 3$, it will increment $R$ to get to character `a` and reach a duplicate:
+  $$\begin{array}{cccccc}
+    f & a & c & d & a & e \\
+    L &  &  & & R \\
+  \end{array}$$
+  
+The `maxLength` has already saved the current max length of `4` from `facd`, then we will increment $R$ until we don't have a duplicate and then proceed normally with incrementing `R` until we reach the end of the string, reaching the final answer: `4`
 
 ## Lessons learned
 
