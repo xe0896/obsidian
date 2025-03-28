@@ -9,3 +9,5 @@ Write the code that will take a string and make this conversion given a number o
 string convert(string s, int numRows);
 ```
 ***
+This problem requires a diagram to figure out a pattern and how we can map `answer.charAt(i)` $\rightarrow$ `answer.charAt(i+1)`, this was done by looking at small `numRows` and large `numRows` and identifying this mapping:
+![[image (1).png]]
