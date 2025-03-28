@@ -3,5 +3,10 @@
   "theme": "obsidian",
   "translucency": true,
   "baseFontSize": 13,
-  "nativeMenus": false
+  "nativeMenus": false,
+  "interfaceFontFamily": "",
+  "textFontFamily": "",
+  "enabledCssSnippets": [
+    "center"
+  ]
 }
