@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevDocs/Leetcode/6 - Zigzag Conversion (27.03.25).md",
+                "file": "DevDocs/Leetcode/944 - Delete Columns to Make Sorted (16.03.25).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "6 - Zigzag Conversion (27.03.25)"
+              "title": "944 - Delete Columns to Make Sorted (16.03.25)"
             }
           }
         ]
@@ -157,8 +157,8 @@
             "state": {
               "type": "advanced-tables-toolbar",
               "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
             }
           }
         ],
@@ -182,17 +182,19 @@
   },
   "active": "a642d813660bf2be",
   "lastOpenFiles": [
+    "DevDocs/Leetcode/1 -  Two Sum (21.03.25).md",
     "DevDocs/Leetcode/2 - Add Two Numbers (22.03.25).md",
     "DevDocs/Leetcode/3 - Longest Substring Without Repeating Characters (23.03.25).md",
-    "DevDocs/Leetcode/944 - Delete Columns to Make Sorted (16.03.25).md",
     "DevDocs/Leetcode/5 - Longest Palindrome Substring (24.03.25).md",
-    "DevDocs/Leetcode/6 - Zigzag Conversion (27.03.25).md",
     "DevDocs/Leetcode/9 - Palindrome Number (24.03.25).md",
+    "DevDocs/Leetcode/6 - Zigzag Conversion (27.03.25).md",
+    "Images/image (1).png",
+    "Images/Pasted image 20250328171202.png",
+    "Images/Pasted image 20250328171159.png",
     "README.md",
+    "DevDocs/Leetcode/944 - Delete Columns to Make Sorted (16.03.25).md",
     "Images/Pasted image 20250327220727.png",
     "Images",
-    "DevDocs/Leetcode/Untitled.md",
-    "DevDocs/Leetcode/1 -  Two Sum (21.03.25).md",
     "DevDocs/Untitled 1.md",
     "DevDocs/Leetcode",
     "DevDocs/Untitled.md",
@@ -219,9 +221,6 @@
     "Year1/Images/Pasted image 20231019101533.png",
     "Year1/Images/Pasted image 20231020162954.png",
     "Year1/Images/Pasted image 20231020172130.png",
-    "Year1/Images/Pasted image 20231020172702.png",
-    "Year1/Images/Pasted image 20231020173626.png",
-    "Year1/Images/Pasted image 20231020180300.png",
     "Year1/Design and Information Structures",
     "Mathematics for Computer Scientists 1/Untitled",
     "Untitled.canvas",

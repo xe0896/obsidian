@@ -28,7 +28,7 @@ public int[] twoSum(int[] nums, int target) {
 }
 ```
 
-## $O(n^2)$ solution
+## $O(n)$ solution
 
 Not sure when I will go round to figuring this one out
 ## Lessons learned
