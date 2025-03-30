@@ -28,7 +28,7 @@ For projects, the vault includes:
 
 ## Structure  
 The vault is organized with separate sections for:  
-- `LeetCode/` → Problem breakdowns and solutions.  
-- `Projects/` → Technical documentation for personal projects.  
+- `DevDocs/Leetcode/` → Problem breakdowns and solutions.  
+- `DevDocs/Projects/` → Technical documentation for personal projects.  
 
-This structured approach ensures a well-documented, easily navigable knowledge base for both problem-solving and project development.  
+This structured approach ensures a well-documented, easily navigable knowledge base for myself.
