@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DevDocs/Leetcode/5 - Longest Palindrome Substring (24.03.25).md",
+                "file": "DevDocs/Projects/Colour Switcher.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 5 - Longest Palindrome Substring (24.03.25)"
+              "title": "Outgoing links from Colour Switcher"
             }
           },
           {
@@ -166,8 +166,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -182,10 +181,13 @@
   },
   "active": "a642d813660bf2be",
   "lastOpenFiles": [
+    "DevDocs/Leetcode/3 - Longest Substring Without Repeating Characters (23.03.25).md",
+    "DevDocs/Leetcode/5 - Longest Palindrome Substring (24.03.25).md",
+    "DevDocs/Leetcode/9 - Palindrome Number (24.03.25).md",
+    "DevDocs/Projects/Colour Switcher.md",
     "Images/output.png",
     "Images/Pasted image 20250330143036.png",
     "DevDocs/Leetcode/6 - Zigzag Conversion (27.03.25).md",
-    "DevDocs/Projects/Colour Switcher.md",
     "Images/Pasted image 20250330142918.png",
     "Images/Pasted image 20250327220727.png",
     "Images/Pasted image 20250330142745.png",
@@ -195,15 +197,11 @@
     "Images/Pasted image 20250328171159.png",
     "Images/Pasted image 20250328171202.png",
     "Year1.txt",
-    "New Bitmap image.bmp",
     "New shortcut.lnk",
     "New AutoHotkey Script.ahk",
-    "DevDocs/Leetcode/9 - Palindrome Number (24.03.25).md",
-    "DevDocs/Leetcode/5 - Longest Palindrome Substring (24.03.25).md",
     "DevDocs/Projects",
     "DevDocs/Leetcode/2 - Add Two Numbers (22.03.25).md",
     "DevDocs/Leetcode/1 -  Two Sum (21.03.25).md",
-    "DevDocs/Leetcode/3 - Longest Substring Without Repeating Characters (23.03.25).md",
     "DevDocs/Leetcode/944 - Delete Columns to Make Sorted (16.03.25).md",
     "README.md",
     "Images",

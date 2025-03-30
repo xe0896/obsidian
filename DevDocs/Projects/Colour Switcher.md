@@ -106,5 +106,91 @@ Below is a sketch of how the grid should look like and what each grid will conta
 
 ![[output.png]]
 
+```python
+ttk.Label(input_frame, text = "R:").grid(column = 1, row = 1, sticky = W)
+r = StringVar()
+r_entry = ttk.Entry(input_frame, width = 7, textvariable = r)
+r_entry.grid(column = 2, row = 1, padx = 5)
+
+ttk.Label(input_frame, text="G:").grid(column=3, row=1, sticky=W)
+g = StringVar()
+g_entry = ttk.Entry(input_frame, width=7, textvariable=g)
+g_entry.grid(column=4, row=1, padx=5)
+  
+ttk.Label(input_frame, text="B:").grid(column=5, row=1, sticky=W)
+b = StringVar()
+b_entry = ttk.Entry(input_frame, width=7, textvariable=b)
+b_entry.grid(column=6, row=1, padx=5)
+```
+
+The above places a `ttk` label like `R:` or `G:`and stores the input as a `StringVar()` to get real-time values as the user enters there values, and we specify the location the input should be in the grid.
+
+Now that the input fields have been created, we now have to work on the buttons. For now we will work on the following buttons:
+
+- Calculate: Colour switch
+- Open:  Open the file, allows us to copy
+- Anki: Preset values to colour switch to Anki
+- Obsidian: Preset values to colour switch to Obsidian
+
+To do this we create a new frame: `button_frame`, this will hold all our buttons allowing us to place them in separate grids from the `input_frame`:
+
+```python
+button_frame = ttk.Frame(mainframe)
+button_frame.grid(column = 1, row = 2, columnspan = 6, sticky = "ew")
+```
+
+Note that we make the `button_frame` locate at `(column=1, row=2)` whereas our `input_frame` is at `(column=1, row=1)`, allowing us to control the position of different grids.
+
+To create the buttons we must specify what function to execute when we press the button, we can also specify whether it should hug the left or right in its given grid point:
+
+```python
+ttk.Button(button_frame, text="Calculate", command=calculate).pack(side="left")
+ttk.Button(button_frame, text="Open", command=open).pack(side="left")
+ttk.Button(button_frame, text="Anki", command=lambda: presets("44", "44", "44")).pack(side="left")
+ttk.Button(button_frame, text="Obsidian", command=lambda: presets("30", "30", "30")).pack(side="left")
+```
+
+Lastly the last frame we will create is the grid for the image: `image_label`
+
+```python
+image_label = ttk.Label(mainframe)
+image_label.grid(column = 1, row = 3, columnspan = 1, pady = 10) # pady is just some padding to make it look nicer
+```
+
+This frame is special to the others as it will contain the image and will mean that when we press `Calculate`, we will get the image meaning we should re-size the window accordingly:
+
+```python
+mainframe.columnconfigure(0, weight = 1)
+mainframe.columnconfigure(4, weight = 1)
+mainframe.rowconfigure(4, weight = 1)
+```
+
+The above makes the image re-size as we increase/decrease the window dimensions, weight denotes how much it should expand when it grows.
+
+The following code s just for quality of life and to make stuff feel and look a bit nicer, for this one when the user launches the program it will automatically set the focus on the `r_entry` input field as it is the first input of RGB:
+
+```python
+r_entry.focus()
+```
+
+The following binds the `Enter` key to the `calculate()` function meaning if the user presses the `Enter` key then they will initiate the colour switching.
+
+```python
+root.bind("<Return>", calculate)
+```
+
+The following changes how the standard `Tkinter` represents its UI to make it look a bit nicer.
+
+```python
+style = ttk.Style()
+style.theme_use('clam')
+  
+style.configure('TFrame', background='#1e1e1e')
+style.configure('TLabel', background='#1e1e1e', foreground='white')
+style.configure('TButton', background='#333333', foreground='white')
+```
+
+
+
 
 
