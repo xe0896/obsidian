@@ -66,3 +66,45 @@ import calc
 
 The above was imported in `main.py` as the colour conversion stuff was located at `calc.py`, this allows us to access `calc.py` functions and variables, we could of done `from calc import process` as our function was named `process` but the aliasing that `import calc` gives us was helpful since we could do `calc.process()` and ensure no other modules that contained `process` clashed if we just done `process()`
 
+```python
+root = Tk()
+root.title("Color Switcher")
+```
+
+This creates the application with the name 'Color Switcher' and we can interact this via the `root` object
+
+```python
+mainframe = ttk.Frame(root, padding="3 3 12 12")
+mainframe.grid(column=0, row=0, sticky=(N, W, E, S))
+root.columnconfigure(0, weight=1)
+root.rowconfigure(0, weight=1)
+```
+
+`Tkinter` uses the concepts of frames which are divided into grids and allow us to add labels or buttons on the grids:
+
+![[Pasted image 20250330143036.png]]
+
+We can use `(column,row)` notation to denote a place in the grid where we can add our buttons/labels, to initialize the main grid we do the following:
+
+```python
+mainframe = ttk.Frame(root, padding = "3 3 12 12")
+mainframe.grid(column = 0, row = 0, sticky = (N,W,E,S))
+root.columnconfigure(0, weight = 1)
+root.rowconfigure(0, weight = 1)
+```
+
+This creates the `mainframe` which as padding (boundaries) and since its our first initialization we use `column = 0, row = 1`,  we also clarify that we want `sticky = (N,W,E,S)` which means we want the grid to use all `N,W,E,S` and lastly we configure the row and columns such that it fits everything when initialized.
+
+The `mainframe` will be used as the parent frame and all the other frames will be inside this frame, one of which will be the input field which will have the frame name: `input_frame`:
+
+```python
+input_frame = ttk.Frame(mainframe)
+input_frame.grid(column = 1, row = 1, columnspan = 4, sticky = W)
+```
+
+Below is a sketch of how the grid should look like and what each grid will contain since we want the input field to make it obvious what that input field will do:
+
+![[output.png]]
+
+
+
