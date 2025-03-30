@@ -1,1 +1,1 @@
-OBSIDIAN VAULT FELLA OF MY LEETCODE DOCUMENTATION AND SOME OTHER STUFF
+Obsidian Vault containing my documentation for my Leetcode questions as it will make me dissect the problem further and attempt to explain it such that I can understand how to do the problem instantly given the documentation, this will also contain my documentation for my projects for the same reason.
