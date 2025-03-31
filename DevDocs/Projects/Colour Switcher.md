@@ -94,7 +94,7 @@ root.rowconfigure(0, weight=1)
 
 `Tkinter` uses the concepts of frames which are divided into grids and allow us to add labels or buttons on the grids:
 
-![[Pasted image 20250330143036.png]]
+![[../../Images/Pasted image 20250330142918.png]]
 
 We can use `(column,row)` notation to denote a place in the grid where we can add our buttons/labels, to initialize the main grid we do the following:
 
@@ -116,7 +116,7 @@ input_frame.grid(column = 1, row = 1, columnspan = 4, sticky = W)
 
 Below is a sketch of how the grid should look like and what each grid will contain since we want the input field to make it obvious what that input field will do:
 
-![[output.png]]
+![[../../Images/output.png]]
 
 ```python
 ttk.Label(input_frame, text = "R:").grid(column = 1, row = 1, sticky = W)
@@ -212,8 +212,5 @@ style.configure('TFrame', background='#1e1e1e')
 style.configure('TLabel', background='#1e1e1e', foreground='white')
 style.configure('TButton', background='#333333', foreground='white')
 ```
-
-
-
 
 
