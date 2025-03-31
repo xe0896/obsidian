@@ -1,5 +1,17 @@
-The way this documentation went wasn't how it should be since I wasn't documenting while creating the solution, there will still be some thought processes here and there for the solution but for the most part it will just be explaining the code.
+## Installation
+
+To use this program clone this repo using this command in the terminal:
+```powershell
+git clone https://github.com/xe0896/colour-switcher
+```
+Then run the `main.py` file by using any means of execution such as:
+```powershell
+py main.py
+```
+There was an effort made to make this work for Linux and Mac but no tests have been made as of yet but it should work, the only thing that required the thought of different operating systems was from opening the file when the user pressed `Open`
 ## Introduction
+
+The way this documentation went wasn't how it should be since I wasn't documenting while creating the solution, there will still be some thought processes here and there for the solution but for the most part it will just be explaining the code.
 
 This program takes in a `.png` file that has a white background and changes the colour of the background to make it look nicer when you want to use images for Anki or Obsidian or any other type of other program that could showcase an image. `numpy` was used to make the colour conversion more efficient rather then just doing the following:
 
@@ -149,6 +161,17 @@ ttk.Button(button_frame, text="Open", command=open).pack(side="left")
 ttk.Button(button_frame, text="Anki", command=lambda: presets("44", "44", "44")).pack(side="left")
 ttk.Button(button_frame, text="Obsidian", command=lambda: presets("30", "30", "30")).pack(side="left")
 ```
+
+The two functions used above: `calculate` and `presets` are called via `lambda` to pass in our parameters, `calculate` was already explained earlier.
+
+```python
+def presets(R,G,B):
+	r.set(R)
+	g.set(G)
+	b.set(B)
+```
+
+As our presets, Anki and Obsidian is the same thing but just different colours, we can change our RGB global `StringVar()` variables using `.set` to the given parameters.
 
 Lastly the last frame we will create is the grid for the image: `image_label`
 
