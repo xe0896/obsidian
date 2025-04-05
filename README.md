@@ -21,10 +21,6 @@ For projects, the vault includes:
 - Code structure and important implementation details.  
 - Installation, usage instructions, and troubleshooting notes.  
 
-## Benefits  
-- **Clarity**: Forces a structured approach to problem-solving and development.  
-- **Retention**: Improves recall by reinforcing concepts through documentation.  
-- **Efficiency**: Allows quick reference when revisiting problems or debugging projects.  
 
 ## Structure  
 The vault is organized with separate sections for:  
