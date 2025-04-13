@@ -1,34 +1,51 @@
-# Obsidian Vault Documentation  
+# Obsidian Vault Documentation
 
-## Purpose  
-This vault serves as a structured documentation system for:  
-- **LeetCode questions**: Breaking down problems to gain deeper understanding and ensure instant recall of solutions.  
-- **Project documentation**: Clearly explaining project architecture, implementation details, and decisions for future reference.  
+## Purpose
 
-## Approach  
-### LeetCode Problems  
-Each problem is dissected methodically to:  
-- Understand the problem statement thoroughly.  
-- Identify key insights and patterns.  
-- Document optimal and alternative solutions.  
-- Explain the reasoning behind the chosen approach.  
-- Highlight edge cases and potential pitfalls.  
+This vault is my go-to place for organizing:
 
-### Project Documentation  
-For projects, the vault includes:  
-- Detailed descriptions of project goals and functionalities.  
-- Architectural design and technical choices.  
-- Code structure and important implementation details.  
-- Installation, usage instructions, and troubleshooting notes.  
+- **LeetCode problems**: Breaking down each problem to help me understand the core concepts and quickly recall solutions.
+    
+- **Project docs**: Documenting my projects, including their architecture, decisions, and implementation details for easy future reference.
+    
 
-## Benefits  
-- **Clarity**: Forces a structured approach to problem-solving and development.  
-- **Retention**: Improves recall by reinforcing concepts through documentation.  
-- **Efficiency**: Allows quick reference when revisiting problems or debugging projects.  
+## Approach
 
-## Structure  
-The vault is organized with separate sections for:  
-- `DevDocs/Leetcode/` → Problem breakdowns and solutions.  
-- `DevDocs/Projects/` → Technical documentation for personal projects.  
+### LeetCode Problems
 
-This structured approach ensures a well-documented, easily navigable knowledge base for myself.
+Each LeetCode problem is broken down into:
+
+- A clear understanding of the problem statement.
+    
+- Identification of key patterns and insights.
+    
+- Optimal and alternative solutions with explanations.
+    
+- Reasoning behind the chosen solution.
+    
+- Key edge cases and pitfalls to watch out for.
+    
+
+### Project Documentation
+
+For my projects, I include:
+
+- Clear descriptions of what the project does and its goals.
+    
+- Architectural design and key technical decisions.
+    
+- Code structure and important implementation notes.
+    
+- Installation guides, usage tips, and troubleshooting advice.
+    
+
+## Structure
+
+The vault is organized into two main sections:
+
+- `DevDocs/Leetcode/` → All the problem breakdowns and solutions.
+    
+- `DevDocs/Projects/` → Detailed technical docs for my personal projects.
+    
+
+This setup helps me keep everything organized and easy to reference whenever I need it.
