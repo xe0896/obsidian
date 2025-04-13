@@ -9,7 +9,10 @@ This vault is my go-to place for organizing:
 - **Project docs**: Documenting my projects, including their architecture, decisions, and implementation details for easy future reference.
     
 
+<<<<<<< HEAD
 ## Approach
+=======
+>>>>>>> 9bf79fec0e9c9c8e6aedaedfd7fa89e6a76f4f7c
 
 ### LeetCode Problems
 

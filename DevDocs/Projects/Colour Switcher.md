@@ -116,7 +116,7 @@ input_frame.grid(column = 1, row = 1, columnspan = 4, sticky = W)
 
 Below is a sketch of how the grid should look like and what each grid will contain since we want the input field to make it obvious what that input field will do:
 
-![[../../Images/output.png]]
+![output](../../Images/output.png)
 
 ```python
 ttk.Label(input_frame, text = "R:").grid(column = 1, row = 1, sticky = W)
