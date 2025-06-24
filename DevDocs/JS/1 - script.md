@@ -30,7 +30,7 @@ We also are not allowed to include actual JavaScript within `script` tags that a
 ```
 
 `alert(1)` will be skipped in this case, so we would need to create a separate `script` tag.
-## Task
+## Example
 Create a page that shows any message (alert) using an external JavaScript file:
 
 ```html
