@@ -97,6 +97,7 @@ public PokemonController(PokemonRepo pokemonRepo) {
 	this.pokemonRepo = pokemonRepo;
 }
 ```
+<<<<<<< HEAD
 When making a controller for a database, these functionalities must be implemented: **Get**, **Create**, **Update** and **Deletion**.
 
 So the following functions will aim to do this, will be done in subsets since the implementation is very simple but the operations done in the backend and the reason for certain stuff can be a bit complicated if one is not familiar with HTTP requests
@@ -147,3 +148,19 @@ public ResponseEntity deletePokemon(@PathVariable Long id) {
 ```
 - `@DeleteMapping` similar to `@GetMapping{"/{id}")` but delete instead rather then accessing our repository for retrieval
 ## React
+=======
+When making a controller for a database, these functionalities must be implemented:
+- Get
+- Create
+- Updating
+- Deletion
+
+So the following functions will aim to do this, will be done in subsets since the implementation is very simple but the operations done in the backend and the reason for certain stuff can be a bit complicated if one is not familiar with HTTP requests
+#### Get
+
+#### Create
+
+#### Update
+
+#### Deletion
+>>>>>>> f193afdbdc9f4d247861154c037951ad14c4b420
