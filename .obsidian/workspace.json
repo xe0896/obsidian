@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevDocs/JS/8 - operators.md",
+                "file": "DevDocs/JS/16 - objects.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "8 - operators"
+              "title": "16 - objects"
             }
           }
         ]
@@ -170,28 +170,33 @@
   },
   "active": "19cd4d4e34632c15",
   "lastOpenFiles": [
-    "DevDocs/JS/7 - type conversions.md",
-    "DevDocs/JS/8 - operators.md",
-    "DevDocs/JS/6 - alert, prompt, confirm.md",
-    "DevDocs/JS/5 - data types.md",
-    "DevDocs/Leetcode/6 - Zigzag Conversion.md",
-    "DevDocs/Leetcode/9 - Palindrome Number.md",
-    "DevDocs/Projects/Colour Switcher.md",
-    "DevDocs/Projects/Rest-React.md",
+    "DevDocs/JS/15 - arrow functions.md",
+    "DevDocs/Leetcode/21 - Merge Two Sorted Lists.md",
+    "DevDocs/Leetcode/26 - Remove Duplicates from Sorted Array.md",
     "DevDocs/Leetcode/20 - Valid Parenthesis.md",
-    "DevDocs/JS/4 - variables.md",
-    "DevDocs/JS/3 - modern mode.md",
-    "DevDocs/JS/1 - script.md",
-    "DevDocs/JS/2 - statements.md",
-    "DevDocs/Leetcode/1 -  Two Sum.md",
+    "DevDocs/Leetcode/14 - Longest Common Prefix.md",
+    "DevDocs/Leetcode/9 - Palindrome Number.md",
+    "DevDocs/Leetcode/6 - Zigzag Conversion.md",
+    "DevDocs/Leetcode/2 - Add Two Numbers.md",
     "DevDocs/Leetcode/3 - Longest Substring Without Repeating Characters.md",
-    "DevDocs/Leetcode/5 - Longest Palindrome Substring.md",
-    "DevDocs/JS",
-    "DevDocs/JS.md",
     "DevDocs/Leetcode/13 - Roman to Integer.md",
     "DevDocs/Leetcode/944 - Delete Columns to Make Sorted.md",
-    "DevDocs/Leetcode/2 - Add Two Numbers.md",
-    "README.md",
+    "DevDocs/Leetcode/5 - Longest Palindrome Substring.md",
+    "DevDocs/Leetcode/1 -  Two Sum.md",
+    "DevDocs/JS/12 - nullish coalescing operator.md",
+    "DevDocs/Leetcode/21 -.md",
+    "DevDocs/JS/16 - objects.md",
+    "DevDocs/JS/5 - data types.md",
+    "DevDocs/JS/14 - functions.md",
+    "DevDocs/JS/9 - comparsions.md",
+    "DevDocs/JS/13 - for, while, case.md",
+    "DevDocs/JS/1 - script.md",
+    "DevDocs/JS/2 - statements.md",
+    "DevDocs/JS/3 - modern mode.md",
+    "DevDocs/JS/4 - variables.md",
+    "DevDocs/JS/6 - alert, prompt, confirm.md",
+    "DevDocs/JS/7 - type conversions.md",
+    "DevDocs/JS",
     "Images/Pasted image 20250330142745.png",
     "Images/Pasted image 20250327220727.png",
     "Images/output.png",
@@ -205,7 +210,6 @@
     "Images",
     "DevDocs/Projects",
     "DevDocs/Leetcode",
-    "DevDocs",
-    "Welcome.md"
+    "DevDocs"
   ]
 }
