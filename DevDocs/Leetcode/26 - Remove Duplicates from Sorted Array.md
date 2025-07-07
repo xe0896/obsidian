@@ -36,7 +36,7 @@ public int removeDuplicates(int[] nums) {
 ```
 This solution is really slow but the memory beats `78%` of submissions so we take those
 ### Faster solution
-A faster solution would be much simpler and more elegant then our previous solution, the logic boils down to this: we will also assume that `i=1` like before but we will take advantage over the fact that this array is non-increasing. order We do this by checking to see if `nums[i-1] != nums[i]`, if this is `true` then this is the first unique element of this value since this `nums[i]` value will not appear anywhere else other then around `nums[i]` since the array is in order. We can then take `nums[k]` and assign this to `nums[i]` which will ensure the unique array orderings are being updated and then increment `k`:
+A faster solution would be much simpler and more elegant then our previous solution, the logic boils down to this: we will also assume that `i=1` like before but we will take advantage over the fact that this array is non-increasing order. We do this by checking to see if `nums[i-1] != nums[i]`, if this is `true` then this is the first unique element of this value since this `nums[i]` value will not appear anywhere else other then around `nums[i]` since the array is in order. We can then take `nums[k]` and assign this to `nums[i]` which will ensure the unique array orderings are being updated and then increment `k` as we have a new unique value:
 
 ```java
 public int removeDuplicates(int[] nums) {
@@ -50,4 +50,3 @@ public int removeDuplicates(int[] nums) {
 	return k;
 }
 ```
-This beats `100%` of solutions on speed but has terrible memory usage.

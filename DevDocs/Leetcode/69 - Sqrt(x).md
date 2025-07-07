@@ -22,7 +22,7 @@ A problem arises with this though since `(i+1)*(i+1)` can get really large (as w
 ```java
 public int mySqrt(int x) {
 	for(long i = 0; i <= x; i++) {
-		if(x >= i*i; && x < (i+1)*(i+1)) {
+		if(x >= i*i && x < (i+1)*(i+1)) {
 			return (int) i;
 		}
 	}

@@ -8,7 +8,7 @@ This problem heavily relies on the understanding of linked lists, if you can und
 ```java
 public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
 	ListNode ans = new ListNode(0);
-	ListNode current - ans;
+	ListNode current = ans;
 ```
 The two lists given are in order, this helps us as we do not need to consider every single node in both the lists since when one is exhausted and fully iterated over, then we can just append the node of the non-exhausted list as it already has the other nodes linked and it would finish the job.
 
