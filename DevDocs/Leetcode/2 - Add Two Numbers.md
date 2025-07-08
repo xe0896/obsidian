@@ -27,7 +27,7 @@ public class ListNode {
 
 The first constructor I assume was to make a `ListNode` with no pointers yet and the other one was for when we want to assign a pointer straight away, these didn't seemed useful on actually solving the problem.
 
-After some thinking the problem was easier then I thought, there was no need to go to the end like a normal column addition, we can just start at index `0` and perform column addition from there as the linked list variant is reversed so it acts as starting from the end anyways.
+After some thinking the problem was easier then I thought, there was no need to go to the end like a normal column addition, we can just start at index `0` and perform column addition from there as the linked list variant is reversed so it acts as starting from the end anyways (which could be seen as very obvious but it wasn't intuitive to me for some reason).
 
 Initially a for-loop was being made to iterate over the linked lists but since its a conditioned controlled loop on whether or not the linked list next value is null or not, a while loop seemed to fit and also we wasn't going to be using the iterator anyways ($i$).
 
@@ -108,6 +108,7 @@ public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 		int val1;
 		int val2;
 
+		// Default value is 0 if there is no value
 		if (l1 != null) {
 			val1 = l1.val;
 		} else {
@@ -119,10 +120,12 @@ public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 			val2 = 0;
 		}
 
+		// val1++ is add1, could of been val2++
 		if (add1) {
 			val1++;
 		}
 
+		// Assigning current.val based on val1 and val2, add1 checks
 		if (val1 + val2 > 9) {
 			add1 = true;
 			current.val = val1 + val2 - 10;
@@ -131,6 +134,7 @@ public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 			current.val = val1 + val2;
 		}
 
+		// Moves to next node if it exists, atleast one will exist due to loop
 		if (l1 != null) {
 			l1 = l1.next;
 		}
@@ -138,6 +142,7 @@ public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 			l2 = l2.next;
 		}
 
+		// Creating new node and hopping to it as it will get a new value next iter
 		if (l1 != null || l2 != null || add1) {
 			current.next = new ListNode();
 			current = current.next;

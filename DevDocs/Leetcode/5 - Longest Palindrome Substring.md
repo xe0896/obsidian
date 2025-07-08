@@ -4,7 +4,7 @@ Initially I thought a sliding window could of been done here, but after some thi
 
 Instead (after looking at some hints), a better solution would be to start with a `char` in the given string and use that as the center and we grow this to a string to make it become a potential palindrome if the two outer `char` values are the same.
 
-I created two pointers `x,y` which will be used to check outwards from the `center`, there were two cases that I had to consider: Palindrome could have even or odd length. This was relevant since the a `center` wont exist for an even length Palindrome. 
+I created two pointers `x,y` which will be used to check outwards from the `center`, there were two cases that I had to consider: Palindrome could have even or odd length. This was relevant since a `center` wont exist for an even length Palindrome. 
 
 Let's first consider the odd case which is the easiest case, let `center = C`:
 

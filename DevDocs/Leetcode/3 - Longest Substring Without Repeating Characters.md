@@ -44,9 +44,6 @@ public int lengthOfLongestSubstring(String s) {
 But initially it seemed like this wasn't to efficient in terms of the use of pointers and not other things such as `N = N + s.charAt(j)` is not efficient as it creates a new string every time so its best to use `StringBuilder`. In terms of how once we arrive at a duplicate character, we should restart at that duplicate character rather then incrementing `i` (i.e: `i = j`). This seemed to me as a correct approach but this won't be correct since a string such as: `abcdaefg` would reach up to `N = abcd` then stop as it has encountered a duplicate character `a`, then start at the second `a` and get `aefg`, when in reality the longest substring is `bcdaefg` but since we made `i = j` we don't consider the case where if we removed the first `a` we could of gotten a much larger substring rather then just removing `a` and a lot more other characters.
 
 Extra notes: I was doing the `i = j` stuff but then didn't account for the above so I thought it was something to do with the pointers not pointing to the correct characters so I was messing around with `i = j - 1` which gave me extra tests passed but still not 100% but it was just that the small tests passed that reaped benefits from that `-1`, 
-
-<span style="color:green">Also i could make this more efficient using StringBuilder and hashing but maybe when you see this again or use a completely different logic using a sliding window</span>.
-
 ## Sliding Window solution
 
 ```java

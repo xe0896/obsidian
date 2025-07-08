@@ -29,8 +29,21 @@ public int[] twoSum(int[] nums, int target) {
 ```
 
 ## $O(n)$ solution
+The `O(n)` solution uses the fact that we can the two indices by checking to see if `target-x` exists in our current iteration, and if it does exist then the index that this value is stored in is the complement, the problem is that checking to see if a value exists every time can get expensive so we use a hash-map for its `O(1)` access time.
+```java
+public int[] twoSum(int[] nums. int target) {
+	Map<Integer, Integer> map = new HashMap<>();
+	for(int i = 0; i < nums.length; i++) {
+		int complement = target - nums[i];
+		if(map.containsKey(complement)) {
+			return new int[] {map.get(complement), i}'
+		}
+		map.put(nums[i], i);
+	}
 
-Not sure when I will go round to figuring this one out
+	return new int[];
+}
+```
 ## Lessons learned
 
 -  Lessons will be learned from $O(n^2)$ probably
