@@ -40,7 +40,7 @@ public String longestCommonPrefix(String[] strs) {
 	}
 	outer:
 	for(int j = 0; j < minLength; j++) {
-		String a = String.valueOf(strs[0].charAt(0));
+		String a = String.valueOf(strs[0].charAt(j));
 		sub = sub + a;
 		for(int i = 0; i < strs.length; i++) {
 			if (strs[i].charAt(i) != sub.charAt(j)) {

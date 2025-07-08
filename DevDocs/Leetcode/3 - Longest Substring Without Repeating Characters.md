@@ -31,7 +31,7 @@ public int lengthOfLongestSubstring(String s) {
 		for (int j = i; j < s.length(); j++) {
 			if (!exists(s.charAt(j), N)) {
 				N = N + s.charAt(j);
-				maxLength = Math.max(maxLength, N.length);
+				maxLength = Math.max(maxLength, N.length());
 			} else {
 				break;
 			}

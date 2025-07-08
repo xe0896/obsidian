@@ -101,3 +101,4 @@ public String longestPalindrome(String s) {
 - Using substring and knowing that `substring(a,b)`, `a` is inclusive and `b` is exclusive
 - Handle different cases using while loop
 - Keep track of the longest string we encounter
+# THIS ALL FLIPPIN WRONG

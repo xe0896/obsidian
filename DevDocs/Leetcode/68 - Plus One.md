@@ -23,7 +23,7 @@ public int[] plusOne(int[] digits) {
 			return di;
 		}
 		digits[digits.length-1-count] = digits[digits.length-1-count] + 1;
-		for(int i = 0; i < digits.length-count; i++) {
+		for(int i = digits.length-count; i < digits.length; i++) {
 			digits[i] = 0;
 		}
 		return digits;

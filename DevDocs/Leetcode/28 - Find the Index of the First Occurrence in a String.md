@@ -32,7 +32,6 @@ public int strStr(String haystack, String needle) {
 ```java
 public int strStr(String haystack, String needle) {
 	int left = 0;
-	char start = needle.charAt(0);
 	for(int right = 0; right < haystack.length(); right++) {
 		if(right - left + 1 < needle.length()) {
 			left++;
