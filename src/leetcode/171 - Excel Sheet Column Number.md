@@ -13,7 +13,7 @@ AB -> 28
 ...
 ```
 ***
-This question requires some knowledge on casting and understanding the base-26 system. We will iterate over the string from left to right meaning our current character may not be the final character and could be in the middle meaning its *power* should be determined by the existence of more characters to the left, for example: If we received an input of `ZBY` then if we was at character `Z` then the *power* this has isn't high by itself, it is only `26` but since it is preceded by extra characters then its *power* is much higher, mainly because its at the 3rd character starting from the left.
+This question requires some knowledge on casting and understanding the base-26 system. We will iterate over the string from left to right meaning our current character may not be the final character and could be in the middle meaning its *power* should be determined by the existence of more characters to the right, for example: If we received an input of `ZBY` then if we was at character `Z` then the *power* this has isn't high by itself, it is only `26` but since it is preceded by extra characters then its *power* is much higher, mainly because its at the 3rd character starting from the left.
 
 With this is mind we also need to calculate a given characters ASCII value which can be done via casting:
 ```java

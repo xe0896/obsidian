@@ -5,7 +5,11 @@ You must implement a solution with a linear runtime complexity and use only co
 This question has a trivial solution which is simply just maintaining a set that stores the first occurrence of an integer and whenever we find the same integer again we remove this element from our set and repeat this process until we eventually have only one element which has no pair. This doesn't satisfy the question requirements as it states we should only use constant extra space, but we are maintaining a list of potential `n` elements at the worst case:
 ```java
 public int singleNumber(int[] nums) {
+<<<<<<< HEAD
 	Set<Integer> set = new sHashSet<>();
+=======
+	Set<Integer> set = new HashSet<>();
+>>>>>>> 7d69ada (Man)
 	for(int i = 0; i < nums.length; i++) {
 		if(set.contains(nums[i])) {
 			set.remove(nums[i]);

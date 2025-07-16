@@ -29,7 +29,9 @@ public int[] twoSum(int[] nums, int target) {
 ```
 
 ## $O(n)$ solution
-The `O(n)` solution uses the fact that we can the two indices by checking to see if `target-x` exists in our current iteration, and if it does exist then the index that this value is stored in is the complement, the problem is that checking to see if a value exists every time can get expensive so we use a hash-map for its `O(1)` access time.
+The `O(n)` solution uses the fact that we can the two indices by checking to see if `target-x` exists in our current iteration, and if it does exist then the index that this value is stored in is the complement. This can be simply derived as we can see we want two indices `i` and `j` that satisfy `nums[i] + nums[j] = target`, given that we want to find two pairs that we can iterate over an array to make one of them known, so if `nums[i]` was known to us we can find `nums[j]` by doing `nums[j] = target - nums[i]`, now every time we iterate over the array if we do not find `nums[j]` with the definition above then we put the current complement `target - nums[i]` and go onto the next iteration until we find a match, our `nums[j]`.
+
+Since checking to see if a value exists every time can get expensive so we use a hash-map for its `O(1)` access time.
 ```java
 public int[] twoSum(int[] nums. int target) {
 	Map<Integer, Integer> map = new HashMap<>();
