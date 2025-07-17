@@ -18,7 +18,17 @@
  */
 public class Solution {
     public boolean hasCycle(ListNode head) {
-        
+        ListNode tort = head;
+        ListNode hare = head;
+        while(hare != null && hare.next != null)  {
+            
+            hare = hare.next.next;
+            tort = tort.next;
+            if(hare == tort) {
+                return true;
+            }
+        }
+        return false;
     }
 }
 // @lc code=end
