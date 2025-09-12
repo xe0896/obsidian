@@ -24,7 +24,7 @@ An important attribute regarding our Markdown is to be able to customise how it 
 
 ### Navigation bar
 The navigation bar needed to be unique, and unique in terms of normal websites since this type of navigation bar is common in applications but not in websites and the idea was to replicate the navigation bar that Obsidian has:
-![[obsidian_navbarresized?.png]]
+![[obsidian_navbarresized.png]]
 There are some properties that this navigation bar has:
 - Indication of directory opened, in this case it is using arrows
 - Hierarchy within a directory
