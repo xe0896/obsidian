@@ -91,3 +91,11 @@ return artwork;
 }));
 ```
 
+However, if we was using Immer then we could mutate in the form `artwork.seen = nextSeen` freely as we are not actually mutating the original state, but a special `draft` object given by Immer, we could also use `.push` and `.pop` on our `draft` object:
+```jsx
+updateMyTodos(draft => {  
+	const artwork = draft.find(a => a.id === artworkId);  
+	artwork.seen = nextSeen;  
+});
+```
+
