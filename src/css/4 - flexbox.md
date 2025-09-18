@@ -23,7 +23,13 @@ Our items will be along these axis and can be manipulated by using `justify-cont
 |  `flex-end`  |  Align items from the end of the cross axis  |
 |   `center`   | Align items on the center of the cross axis  |
 |  `stretch`   |                                              |
+We can also manipulate the main axis by using `flex-direction` which would make other properties of the flexbox change:
 
-
+| Attribute |                Explaination                 |
+| :-------: | :-----------------------------------------: |
+|   `row`   |      Default value of `flex-direction`      |
+| `column`  |       Main axis swaps with cross axis       |
+| `center`  | Align items on the center of the cross axis |
+| `stretch` |                                             |
 
 
