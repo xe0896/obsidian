@@ -1,0 +1,19 @@
+Neet has 150 questions full of different types of problems that are divided into sections:
+- Arrays and Hashing
+- Two Pointers
+- Stack
+- Binary Search
+- Sliding Window
+- Linked List
+- Trees
+- Tries
+- Backtracking
+- Heap/Priority Queue
+- Graphs
+- 1-D DP
+- Intervals
+- Greedy
+- Advanced Graphs
+- 2-D DP
+- Bit Manipulation
+- Math and Geometry

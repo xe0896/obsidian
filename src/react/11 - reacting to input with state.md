@@ -2,7 +2,7 @@ React differs from vanilla JS as it is seen as declarative whereas vanilla JS is
 
 This relates to input as if we was to give React a state that we want to be on, then React can cleverly figure its way out given that the state is valid, vanilla JS would require a whole restructure of the DOM and would need us to command each element on what to do.
 
-We can create some steps that must be completed to make an efficient program which could be in many states, for our program we will be making a text box which would be used to answer a question that will also have a button to submit our answer, the button will be disabled if the text box is empty and then valid whenever the text box has some value, if the value is wrong when pressing the button, then we will output a message that this answer is wrong, if this value is correct then we will transition to another message that says that the answer is correct. We will also add a spinner when the user attempts an answer in the form of a timer and the text box is disabled.
+We can create some steps that must be completed to make an efficient program which could be in many states, for our program we will be making a text box which would be used to answer a question that will also have a button to submit our answer, the button will be disabled if the text box is empty and then valid whenever the text box has some value, if the value is wrong when pressing the button, then we will output a message that this answer is wrong, if this value is correct then we will transition to another message that says that the answer is correct. We will also add a spinner when the user attempts an answer in the form of a timer and the text box is disabled during this spinner.
 #### Step 1: Identify states that the user may see
 - Empty: button is disabled
 - Typing: button is enabled
@@ -12,7 +12,7 @@ We can create some steps that must be completed to make an efficient program whi
 
 Before we go straight into making the whole program, it is recommended to make a lesser version of this current program by omitting some states such as the spinner state or the success state.
 
-It can be useful if we was to output multiple states at once, by calling our component multiple times but with a prop that can define a different state, allowing us to see what transitions into what and make it easier to visualise each state and the program as a whole.
+It can be useful if we was to output multiple states at once, by calling our component multiple times but with a prop that can define a different state, allowing us to see what transitions into what and makes it easier to visualise each state and the program as a whole.
 #### Step 2: Determine what causes a state to change
 There are two types of inputs that a state could be given and cause a transition to another state, these are human inputs and computer inputs, a human input could be simply just a button being clicked, or a text box no longer being empty. A computer input could be a network response that is arriving or an image that is being loaded in. For our specific program we can define some inputs that cause a state transition:
 - Changing text input (human): should switch to Typing state or back
