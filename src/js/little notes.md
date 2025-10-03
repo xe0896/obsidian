@@ -1,0 +1,3 @@
+- When wanting to test our some JavaScript behaviour, we can go to the terminal and do `node` to open the interactive JavaScript prompt (`.exit` to leave)
+- Run `node file.js` to run a `js` file
+- 
