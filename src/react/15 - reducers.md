@@ -75,3 +75,66 @@ function handleAddTask(text) {
 }
 ```
 
+As shown, we are providing an object to `dispatch` of the information that is required to add an additional task, the object we are providing is called an "action". We can provide whatever we want, we just want to make it in context.
+
+Now, we need to create our reducer function that will be containing our state logic and it normally follows a certain pattern: two arguments (current state and action object) and it should return the next state. React will set the state to what is returned from our reducer.
+
+Given that we have given the `dispatch` function a `type` prop to tell us what the user expects from this action, we can simply do multiple if-statements and depending on what `type` this action is the user will receive an appropriate action:
+
+```jsx
+function tasksReducer(tasks, action) {
+  if (action.type === 'added') {
+    return [
+      ...tasks,
+      {
+        id: action.id,
+        text: action.text,
+        done: false,
+      },
+    ];
+  } else if (action.type === 'changed') {
+    return tasks.map((t) => {
+      if (t.id === action.task.id) {
+        return action.task;
+      } else {
+        return t;
+      }
+    });
+  } else if (action.type === 'deleted') {
+    return tasks.filter((t) => t.id !== action.id);
+  } else {
+    throw Error('Unknown action: ' + action.type);
+  }
+}
+```
+
+To actually make this useful and more centralised we can use the `useReducer` hook instead of `useState` which will take in two arguments: a reducer function and initial state. It will return a stateful value and a `dispatch` function that we can use to pass to our reducer function:
+
+```jsx
+const [tasks, dispatch] = useReducer(tasksReducer, initialState);
+```
+
+Reducers are working with states, meaning they must follow the principle that `useState` has been following and that is we cannot allow mutation of any sort and that they must be pure.
+
+Reducers also have a similar thing that `useState` when it comes to `Immer`, we can do:
+
+```jsx
+import { useImmerReducer } from 'use-immer';
+const [tasks, dispatch] = useImmerReducer(tasksReducer, initialTasks);
+```
+
+Allowing us to mutate our `draft` object directly in our `tasksRenderer` function as behind the scenes the draft object that `Immer` uses is given as an argument for us allowing us to mutate like we have received the `prev` state from an arrow function:
+```jsx
+function taskRenderer(draft, action) {
+	if(action.type === "added") {
+		draft.push({
+			id: action.id,
+			text: action.text,
+		});
+	} else {
+		throw Error("Unknown action " + action.type);
+	}
+}
+```
+
+
