@@ -58,7 +58,7 @@ const initialTasks = [
 
 To reduce this complexity we can keep our logic into one easy access place, we can move this state logic into a single function that is outside of the component called a "reducer".
 
-As the logic of `useState` is pretty simple, we should try to migrate to `useSTate` to `useReducer` to make it easier to understand, there are some steps for this:
+As the logic of `useState` is pretty simple, we should try to migrate from `useState` to `useReducer` to make it easier to understand, there are some steps for this:
 - Replace all instances of setting state to dispatching actions instead
 - Create a reducer function
 - Call reducer function from our component
@@ -75,7 +75,7 @@ function handleAddTask(text) {
 }
 ```
 
-As shown, we are providing an object to `dispatch` of the information that is required to add an additional task, the object we are providing is called an "action". We can provide whatever we want, we just want to make it in context.
+As shown, we are providing an object to `dispatch` of the information that is required to add an additional task, the object we are providing is called an "action". We can provide whatever we want, we just want to make `dispatch` have some context.
 
 Now, we need to create our reducer function that will be containing our state logic and it normally follows a certain pattern: two arguments (current state and action object) and it should return the next state. React will set the state to what is returned from our reducer.
 
@@ -108,14 +108,14 @@ function tasksReducer(tasks, action) {
 }
 ```
 
-To actually make this useful and more centralised we can use the `useReducer` hook instead of `useState` which will take in two arguments: a reducer function and initial state. It will return a stateful value and a `dispatch` function that we can use to pass to our reducer function:
+To actually make this useful and more centralised we can use the `useReducer` hook instead of `useState` which will take in two arguments: a reducer function and initial state. It will return a stateful value `tasks` and a `dispatch` function that we can use to pass to our reducer function:
 
 ```jsx
 const [tasks, dispatch] = useReducer(tasksReducer, initialState);
 ```
 
 Reducers are working with states, meaning they must follow the principle that `useState` has been following and that is we cannot allow mutation of any sort and that they must be pure.
-
+### Reducer x Immer
 Reducers also have a similar thing that `useState` when it comes to `Immer`, we can do:
 
 ```jsx
