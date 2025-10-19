@@ -10,6 +10,27 @@
  * @return {boolean}
  */
 var canJump = function (nums) {
-  for (let i = 0; i < nums.length; i++) {}
+  const dp = Array(nums.length).fill(undefined);
+  return helper(0, dp, nums);
+};
+
+var helper = function (index, dp, nums) {
+  if (index >= nums.length - 1) {
+    return true;
+  }
+
+  if (dp[index] !== undefined) {
+    return dp[index];
+  }
+
+  for (let i = index; i < index + nums[index]; i++) {
+    if (helper(i + 1, dp, nums)) {
+      dp[index] = true;
+      return true;
+    }
+  }
+
+  dp[index] = false;
+  return false;
 };
 // @lc code=end

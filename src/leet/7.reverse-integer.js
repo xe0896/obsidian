@@ -9,8 +9,5 @@
  * @param {number} x
  * @return {number}
  */
-var reverse = function(x) {
-    
-};
+var reverse = function (x) {};
 // @lc code=end
-
