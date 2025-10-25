@@ -1,22 +1,20 @@
 /*
- * @lc app=leetcode id=55 lang=javascript
+ * @lc app=leetcode id=45 lang=javascript
  *
- * [55] Jump Game
+ * [45] Jump Game II
  */
 
 // @lc code=start
 /**
  * @param {number[]} nums
- * @return {boolean}
+ * @return {number}
  */
-var canJump = function (nums) {
-	let L = 0;
-	let R = 0;
+var jump = function (nums) {
 	let jump = 0;
 	let maxReach = 0;
 	let end = 0;
 
-	for (let i = 0; i < nums.length; i++) {
+	for (let i = 0; i < nums.length - 1; i++) {
 		maxReach = Math.max(maxReach, i + nums[i]); // Index
 
 		if (i == end) {
